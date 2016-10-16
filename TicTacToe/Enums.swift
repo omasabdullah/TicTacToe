@@ -1,5 +1,5 @@
 enum OccupantType {
-    case PlayerOne
-    case PlayerTwo
-    case None
+    case playerOne
+    case playerTwo
+    case none
 }

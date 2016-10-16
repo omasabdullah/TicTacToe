@@ -1,9 +1,5 @@
 import Foundation
 
-class GameBlock {
-    var occupant: OccupantType = .None
-    
-    init(occupant: OccupantType) {
-        self.occupant = occupant
-    }
+class GameSpace {
+    var occupant: OccupantType = .none
 }

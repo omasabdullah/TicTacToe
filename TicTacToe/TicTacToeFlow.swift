@@ -23,7 +23,7 @@ class TicTacToeFlow: UICollectionViewFlowLayout {
         get {
             let numberOfColumns: CGFloat = 3
             let itemWidth = (collectionView!.frame.width - (numberOfColumns - 1)) / numberOfColumns
-            return CGSize(width: itemWidth, height: itemWidth)
+            return CGSize(width: itemWidth - 3, height: itemWidth - 3)
         }
     }
 }
