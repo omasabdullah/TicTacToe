@@ -8,6 +8,7 @@ class MainViewController : UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var gameCells = [GameBlock]()
+    var gameHandler = GameHandler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,9 @@ class MainViewController : UIViewController {
         for _ in 0 ..< 9 {
             gameCells.append(GameBlock(occupant: .None))
         }
+        
+        labelPlayerOne.text = "Player 1: \(gameHandler.playerOneWins)"
+        labelPlayerTwo.text = "Player 2: \(gameHandler.playerTwoWins)"
 
         collectionView.register(UINib(nibName: "GameCell", bundle: nil), forCellWithReuseIdentifier: "GameCell")
 

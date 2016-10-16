@@ -19,6 +19,7 @@
 		0D36022C1DB436E9001F2DDC /* GameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36022B1DB436E9001F2DDC /* GameSpace.swift */; };
 		0D36022E1DB43749001F2DDC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36022D1DB43749001F2DDC /* Enums.swift */; };
 		0D3602311DB43944001F2DDC /* TicTacToeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3602301DB43944001F2DDC /* TicTacToeFlow.swift */; };
+		0D3602331DB43AEA001F2DDC /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3602321DB43AEA001F2DDC /* GameHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0D36022B1DB436E9001F2DDC /* GameSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSpace.swift; sourceTree = "<group>"; };
 		0D36022D1DB43749001F2DDC /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		0D3602301DB43944001F2DDC /* TicTacToeFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeFlow.swift; sourceTree = "<group>"; };
+		0D3602321DB43AEA001F2DDC /* GameHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				0D36022B1DB436E9001F2DDC /* GameSpace.swift */,
+				0D3602321DB43AEA001F2DDC /* GameHandler.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				0D36021F1DB430C7001F2DDC /* MenuViewControler.swift in Sources */,
 				0D3601FD1DB42976001F2DDC /* AppDelegate.swift in Sources */,
 				0D36022C1DB436E9001F2DDC /* GameSpace.swift in Sources */,
+				0D3602331DB43AEA001F2DDC /* GameHandler.swift in Sources */,
 				0D3602191DB42C6C001F2DDC /* MainViewController.swift in Sources */,
 				0D36022A1DB435BF001F2DDC /* GameCell.swift in Sources */,
 				0D36022E1DB43749001F2DDC /* Enums.swift in Sources */,
