@@ -19,6 +19,7 @@ class MainViewController : UIViewController {
         super.viewDidLoad()
         
         gameHandler.resetGame()
+        updateScore()
     }
     
     func updateScore() {
@@ -41,8 +42,17 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        gameHandler.gameSpace[indexPath.row].occupant = gameHandler.currentPlayerTurn()
-        gameHandler.nextTurn()
-        collectionView.reloadData()
+        if gameHandler.gameSpace[indexPath.row].occupant == .none {
+            gameHandler.gameSpace[indexPath.row].occupant = gameHandler.currentPlayerTurn()
+            gameHandler.nextTurn()
+            collectionView.reloadData()
+        }
+    }
+}
+
+extension MainViewController : GameHandlerDelegate {
+    func gameWin(player: PlayerType) {
+        updateScore()
+        gameHandler.resetGame()
     }
 }

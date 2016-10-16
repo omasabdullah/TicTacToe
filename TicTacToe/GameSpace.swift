@@ -1,5 +1,5 @@
 import Foundation
 
 class GameSpace {
-    var occupant: OccupantType = .none
+    var occupant: PlayerType = .none
 }
