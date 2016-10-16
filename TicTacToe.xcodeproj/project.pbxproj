@@ -18,6 +18,7 @@
 		0D36022A1DB435BF001F2DDC /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3602291DB435BF001F2DDC /* GameCell.swift */; };
 		0D36022C1DB436E9001F2DDC /* GameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36022B1DB436E9001F2DDC /* GameSpace.swift */; };
 		0D36022E1DB43749001F2DDC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36022D1DB43749001F2DDC /* Enums.swift */; };
+		0D3602311DB43944001F2DDC /* TicTacToeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3602301DB43944001F2DDC /* TicTacToeFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0D3602291DB435BF001F2DDC /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		0D36022B1DB436E9001F2DDC /* GameSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSpace.swift; sourceTree = "<group>"; };
 		0D36022D1DB43749001F2DDC /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		0D3602301DB43944001F2DDC /* TicTacToeFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		0D3602141DB42BB4001F2DDC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0D36022F1DB43924001F2DDC /* Custom */,
 				0D3602271DB435A5001F2DDC /* Views */,
 				0D36021A1DB42CA4001F2DDC /* Xibs */,
 			);
@@ -176,6 +179,14 @@
 				0D3602291DB435BF001F2DDC /* GameCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		0D36022F1DB43924001F2DDC /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0D3602301DB43944001F2DDC /* TicTacToeFlow.swift */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3602311DB43944001F2DDC /* TicTacToeFlow.swift in Sources */,
 				0D36021F1DB430C7001F2DDC /* MenuViewControler.swift in Sources */,
 				0D3601FD1DB42976001F2DDC /* AppDelegate.swift in Sources */,
 				0D36022C1DB436E9001F2DDC /* GameSpace.swift in Sources */,
