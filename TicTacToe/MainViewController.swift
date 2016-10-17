@@ -10,6 +10,7 @@ class MainViewController : UIViewController {
             collectionView.register(UINib(nibName: "GameCell", bundle: nil), forCellWithReuseIdentifier: "GameCell")
             collectionView.delegate = self
             collectionView.dataSource = self
+            collectionView.backgroundColor = UIColor.black
         }
     }
     
