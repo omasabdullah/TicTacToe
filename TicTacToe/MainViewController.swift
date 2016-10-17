@@ -18,6 +18,7 @@ class MainViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gameHandler.delegate = self
         gameHandler.resetGame()
         updateScore()
     }
@@ -51,8 +52,19 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
 }
 
 extension MainViewController : GameHandlerDelegate {
-    func gameWin(player: PlayerType) {
+    func gameEnd(finishString: String) {
         updateScore()
-        gameHandler.resetGame()
+        
+        let alertController = UIAlertController(title: "Game Over!", message: finishString, preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: {
+            alert in
+            self.gameHandler.resetGame()
+            self.collectionView.reloadData()
+        })
+        
+        alertController.addAction(okayAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
 }

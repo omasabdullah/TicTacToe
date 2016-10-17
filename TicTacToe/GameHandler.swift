@@ -21,9 +21,9 @@ class GameHandler {
         
         // Check end tie
         let p = gameSpace.filter { $0.occupant != .none }
-        if p.count == 0 {
+        if p.count == 9 {
             if let delegate = delegate {
-                delegate.gameWin(player: .none)
+                delegate.gameEnd(finishString: "Tie Game!")
             }
         }
         
@@ -45,13 +45,29 @@ class GameHandler {
     
     func winCheck(a: Int, b: Int, c: Int) {
         if (gameSpace[a].occupant, gameSpace[b].occupant) == (gameSpace[b].occupant, gameSpace[c].occupant) {
+            
+            var returnString = ""
+            
+            switch (gameSpace[a].occupant) {
+            case .playerOne:
+                playerOneWins += 1
+                returnString = "Player one wins!"
+                break
+            case .playerTwo:
+                playerTwoWins += 1
+                returnString = "Player two wins!"
+                break
+            case .none:
+                return
+            }
+            
             if let delegate = delegate {
-                delegate.gameWin(player: gameSpace[a].occupant)
+                delegate.gameEnd(finishString: returnString)
             }
         }
     }
 }
 
 protocol GameHandlerDelegate {
-    func gameWin(player: PlayerType)
+    func gameEnd(finishString: String)
 }
